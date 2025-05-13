@@ -9,5 +9,12 @@ namespace NeoCircusTrain.Classes
 {
     class Animal
     {
+        public int AnimalSize { get; private set; }
+        public bool Carnivore { get; private set; }
+        public Animal(int size, bool Carnivore)
+        {
+            this.AnimalSize = size;
+            this.Carnivore = Carnivore; 
+        }
     }
 }
