@@ -84,5 +84,10 @@ namespace NeoCircusTrain
         {
             IncreaseLabel(LBL_HLarge);
         }
+
+        private void BTNActCreateTrain_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

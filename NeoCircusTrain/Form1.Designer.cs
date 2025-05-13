@@ -281,6 +281,7 @@
             BTNActCreateTrain.TabIndex = 23;
             BTNActCreateTrain.Text = "Create Train";
             BTNActCreateTrain.UseVisualStyleBackColor = true;
+            BTNActCreateTrain.Click += BTNActCreateTrain_Click;
             // 
             // Form1
             // 
