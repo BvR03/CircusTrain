@@ -7,76 +7,82 @@ namespace NeoCircusTrain
         public Form1()
         {
             InitializeComponent();
-            //pass
+        }
+
+        private void DecreaseLabel(Label label)
+        {
+            if (int.TryParse(label.Text, out int value) && value > 0)
+            {
+                label.Text = (value - 1).ToString();
+            }
+        }
+
+        private void IncreaseLabel(Label label)
+        {
+            if (int.TryParse(label.Text, out int value))
+            {
+                label.Text = (value + 1).ToString();
+            }
         }
 
         private void BTNCSmallDecrease_Click(object sender, EventArgs e)
         {
-            LBL_CSmall.Text = (int.Parse(LBL_CSmall.Text) - 1).ToString();
-
+            DecreaseLabel(LBL_CSmall);
         }
 
         private void BTNCSmallIncrease_Click(object sender, EventArgs e)
         {
-            LBL_CSmall.Text = (int.Parse(LBL_CSmall.Text) + 1).ToString();
-
+            IncreaseLabel(LBL_CSmall);
         }
 
         private void BTNCMediumDecrease_Click(object sender, EventArgs e)
         {
-            LBL_CMedium.Text = (int.Parse(LBL_CMedium.Text) - 1).ToString();
-
+            DecreaseLabel(LBL_CMedium);
         }
 
         private void BTNCMediumIncrease_Click(object sender, EventArgs e)
         {
-            LBL_CMedium.Text = (int.Parse(LBL_CMedium.Text) + 1).ToString();
+            IncreaseLabel(LBL_CMedium);
         }
 
         private void BTNCLargeDecrease_Click(object sender, EventArgs e)
         {
-            LBL_CLarge.Text = (int.Parse(LBL_CLarge.Text) - 1).ToString();
+            DecreaseLabel(LBL_CLarge);
         }
 
         private void BTNCLargeIncrease_Click(object sender, EventArgs e)
         {
-            LBL_CLarge.Text = (int.Parse(LBL_CLarge.Text) + 1).ToString();
+            IncreaseLabel(LBL_CLarge);
         }
 
         private void BTNHSmallDecrease_Click(object sender, EventArgs e)
         {
-            LBL_HSmall.Text = (int.Parse(LBL_HSmall.Text) - 1).ToString();
-
+            DecreaseLabel(LBL_HSmall);
         }
 
         private void BTNHSmallIncrease_Click(object sender, EventArgs e)
         {
-            LBL_HSmall.Text = (int.Parse(LBL_HSmall.Text) + 1).ToString();
-
+            IncreaseLabel(LBL_HSmall);
         }
 
         private void BTNHMediumDecrease_Click(object sender, EventArgs e)
         {
-            LBL_HMedium.Text = (int.Parse(LBL_HMedium.Text) - 1).ToString();
-
+            DecreaseLabel(LBL_HMedium);
         }
 
         private void BTNHMediumIncrease_Click(object sender, EventArgs e)
         {
-            LBL_HMedium.Text = (int.Parse(LBL_HMedium.Text) + 1).ToString();
-
+            IncreaseLabel(LBL_HMedium);
         }
 
         private void BTNHLargeDecrease_Click(object sender, EventArgs e)
         {
-            LBL_HLarge.Text = (int.Parse(LBL_HLarge.Text) - 1).ToString();
-
+            DecreaseLabel(LBL_HLarge);
         }
 
         private void BTNHLargeIncrease_Click(object sender, EventArgs e)
         {
-            LBL_HLarge.Text = (int.Parse(LBL_HLarge.Text) + 1).ToString();
-
+            IncreaseLabel(LBL_HLarge);
         }
     }
 }
