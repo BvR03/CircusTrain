@@ -16,7 +16,7 @@ namespace NeoCircusTrain.Classes
             animals.AddRange(AnimalCollection.animals);
             return animals; 
         }
-        public void AnimalCreation()
+        public static void AnimalCreation(int HSmall, int HMedium, int HLarge, int CSmall, int CMedium, int CLarge)
         {
 
         }

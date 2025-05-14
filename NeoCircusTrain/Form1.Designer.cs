@@ -279,7 +279,7 @@
             BTNActCreateTrain.Name = "BTNActCreateTrain";
             BTNActCreateTrain.Size = new Size(141, 29);
             BTNActCreateTrain.TabIndex = 23;
-            BTNActCreateTrain.Text = "Create Train";
+            BTNActCreateTrain.Text = "Sort into Train";
             BTNActCreateTrain.UseVisualStyleBackColor = true;
             BTNActCreateTrain.Click += BTNActCreateTrain_Click;
             // 
@@ -287,7 +287,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1141, 450);
+            ClientSize = new Size(618, 450);
             Controls.Add(BTNActCreateTrain);
             Controls.Add(LBLLarge);
             Controls.Add(LBLMedium);

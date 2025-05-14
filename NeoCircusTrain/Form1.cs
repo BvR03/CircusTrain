@@ -87,7 +87,33 @@ namespace NeoCircusTrain
 
         private void BTNActCreateTrain_Click(object sender, EventArgs e)
         {
+            var values = GetAllLabelValues();
+            AnimalCollection.AnimalCreation(values["HSmall"], values["HMedium"], values["HLarge"], values["CSmall"], values["CMedium"], values["CLarge"]);
+        }
+        private Dictionary<string, int> GetAllLabelValues()
+        {
+            var values = new Dictionary<string, int>();
 
+            void AddValue(Label label, string key)
+            {
+                if (int.TryParse(label.Text, out int value))
+                {
+                    values[key] = value;
+                }
+                else
+                {
+                    values[key] = 0; // fallback value
+                }
+            }
+
+            AddValue(LBL_CSmall, "CSmall");
+            AddValue(LBL_CMedium, "CMedium");
+            AddValue(LBL_CLarge, "CLarge");
+            AddValue(LBL_HSmall, "HSmall");
+            AddValue(LBL_HMedium, "HMedium");
+            AddValue(LBL_HLarge, "HLarge");
+
+            return values;
         }
     }
 }
