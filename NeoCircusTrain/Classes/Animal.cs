@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NeoCircusTrain.Classes
 {
-    class Animal
+    public class Animal
     {
         public animalSize AnimalSize { get; private set; }
         public bool Carnivore { get; private set; }
